@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #333;
+}
+
+header{
+    background-color: #333;
+    padding: 20px;
+}
+
+#menu{
+    display: flex;
+    cursor: pointer;
+    color: aliceblue;
+    
+}
+
+nav > a{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: whitesmoke;
+    border-color: #333;
+    color: black;
+    padding: 4px;
+    margin: 1px;
+    border-radius: 1px;
+    text-decoration: none;
+    align-items: center;
+    flex-basis: 20px;
+    width: 95vw;
+    
+        
+}
+
+nav > a:hover{
+    background-color: #3333336f;
+    color: white;
+}
