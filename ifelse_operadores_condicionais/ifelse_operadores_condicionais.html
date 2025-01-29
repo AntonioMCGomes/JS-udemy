@@ -8,11 +8,15 @@
 <body>
     
     <script>
-        if(2 === 2){
-            document.write('Algo foi escrito aqui (verdadeiro)!')
+        let nota = prompt('Digite uma nota: ') //Prompt recebe um valor como string
+        let media = 7
+
+        if(Number(nota) >= media){
+            document.write('Aprovado')
         } else {
-            document.write('Outra coisa foi dita (falso)!')
+            document.write('Reprovado')
         }
     </script>
+    
 </body>
 </html>

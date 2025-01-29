@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+<body>
+    <script>
+        /*
+            Operador &&
+
+            true && true = true
+            true && false = false
+            false && true = false
+            false && false = false
+
+            Operador || 
+
+            true || true = true
+            true || false = true
+            false || true = true
+            false || false = false
+
+            O Operador !(não) inverte os valores. O que era falso passar a ser verdadeiro e o que era verdadeiro passar a ser falso.
+        */
+
+        let nota = prompt('Digite a nota do aluno: ')
+        let faltas = prompt('Digite a quantidade de faltas do aluno: ')
+        
+        let media = 7
+        let faltas_maximas = 15
+
+        if(nota >= media && faltas <= faltas_maximas) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }
+    </script>
+</body>
+</html>
