@@ -27,6 +27,7 @@ footer{
     justify-content: center;
     align-items: center;
     grid-column: 1;
+
 }
 
 #lugar{
@@ -37,13 +38,21 @@ footer{
     
 }
 
+#titulo{
+    color: white;
+    column-gap: 3;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .redes{
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-column: 3;
     align-items: center;
-    justify-items: center;
-    gap: 10px;
+    grid-column: 3;
+    gap: 20px;
+    flex-flow: row;
+    margin-bottom: 60px;
 }
 
 footer > div > a > img {

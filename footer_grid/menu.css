@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #333;
+    padding: 10px;
+    height: 10vh;
+}
+
+header > nav > ul{
+    height: 5px;
+    position: absolute;
+    top: 50px;
+    right: 10px; 
+}
+
+header > div > span{
+    height: 5px;
+    position: absolute;
+    top: 50px;
+}
+
+#menu{ 
+    color: white;
+    cursor: pointer;
+}
+
+#menuList{
+    display: none;
+}
+
+#menuList > a{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(230, 225, 220);
+    width: 30vw;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px 15px;
+    height: auto;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    
+}
+
+.menuLateral {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+         
+}
+
+.menuLateral > li > a{
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.167);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.menuLateral > li > a:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.8s ease;
+}
+
+main{
+    height: 70vh;
+}
+
+footer{
+    height: 10vh;
+}
