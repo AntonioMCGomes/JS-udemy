@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: seashell;
+    font-weight: bold;
+}
+
+form > div > h1{
+    position: absolute;
+    top: 26%;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(250, 128, 114, 0.637);
+    text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.647);
+  
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.itens{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 30px;
+    height: 600px;
+    gap: 10px;
+    width: 500px;
+    background-color: rgba(100, 148, 237, 0.537);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.299);
+
+}
+
+input{
+    height: 30px;
+    width: 80px;
+    border: none;
+}
+
+
+
+#inome{
+    width: 360px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 5px;
+    
+}
+
+#ialtura{
+    width: 140px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#ipeso{
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#calc{
+    position: absolute;
+    top: 60%;
+    height: 80px;
+    border-radius: 50px;
+    background-color: rgba(0, 139, 139, 0.433);
+    color: aliceblue;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.347);
+    font-weight: bolder;
+}
+
+#calc:hover{
+    background-color: rgba(128, 128, 128, 0.444);
+}
+
+#res{
+    color: rgba(0, 0, 255, 0.384);
+    position: absolute;
+    top: 72%;
+}
+

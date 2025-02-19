@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="" class="container">
+        
+        <div class="itens">
+
+            <h1>
+                Índice de massa <br>
+                Corporal
+            </h1> 
+            
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+            <label for="ialtura">Altura</label>
+            <input type="number" name="altura" id="ialtura">
+            <label for="ipeso">Peso</label>
+            <input type="number" name="peso" id="ipeso">
+            <input type="submit" value="Calcular" id="calc" onclick="calcular()">
+        </div>
+
+        <div id="res">
+            
+        </div>
+
+    </form>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
