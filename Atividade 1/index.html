@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <form action="" class="container">
+    <section class="container">
         
         <div class="itens">
 
@@ -17,21 +17,26 @@
             </h1> 
             
             <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome">
-            <label for="ialtura">Altura</label>
-            <input type="number" name="altura" id="ialtura">
-            <label for="ipeso">Peso</label>
-            <input type="number" name="peso" id="ipeso">
-            <input type="submit" value="Calcular" id="calc" onclick="calcular()">
-        </div>
+            <input type="text" name="nome" id="inome" placeholder="Seu nome">
 
-        <div id="res">
+            <label for="ialtura" class="label">Altura</label>
+            <input type="number" name="altura" id="ialtura" placeholder="ex.: 1.78m" step="0.01">
+
+            <label for="ipeso" class="label">Peso</label>
+            <input type="number" name="peso" id="ipeso" placeholder="ex.: 87.5kg" step="0.01">
+
+
+            <button id="calc" onclick="calcularIMC()">Calcular</button>
             
-        </div>
+            
+            <div id="res">
+            
+            </div>
 
-    </form>
-    <script src="script.js">
-        
+        </div>
+    </section>
+    <script src="script.js">         
+         
     </script>
 </body>
 </html>
