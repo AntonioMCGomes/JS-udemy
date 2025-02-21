@@ -123,7 +123,7 @@ input[type=number]::-webkit-inner-spin-button {
     
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 660px){
     html, body{
         height: 90%;
         width: 90%;
