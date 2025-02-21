@@ -29,11 +29,11 @@ function calcularIMC() {
         resultado += "Obesidade grau III.";
     }
 
-    document.getElementById("res").textContent = `${nome.value} possui índice \n de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como:  ${resultado}.`
+    document.getElementById("res").innerHTML = `Nome: ${nome.value}<br> Massa corporal: ${imc.toFixed(2)} <br> Classificão:  ${resultado}.`
     
 }
 
-/*`${nome} possui índice de massa corporal igual a ${imc}, s`*/    
+/*`${nome.value} possui índice \n de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como:  ${resultado}.`*/    
    
 
 
