@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação CSS3</title>
+  <style>
+    /* Definição da animação com keyframes */
+    @keyframes exemplo-animacao {
+      0% {
+        transform: translateX(0);
+        background-color: blue;
+      }
+      50% {
+        transform: translateX(100px);
+        background-color: green;
+      }
+      100% {
+        transform: translateX(0);
+        background-color: red;
+      }
+    }
+
+    /* Estilo do elemento com a animação */
+    .exemplo {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: exemplo-animacao 5s infinite;
+    }
+  </style>
+</head>
+<body>
+  <!-- Elemento HTML com a classe .exemplo -->
+  <div class="exemplo"></div>
+</body>
+</html>

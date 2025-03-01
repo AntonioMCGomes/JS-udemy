@@ -13,6 +13,7 @@ function calcularIMC() {
 
     if (imc < 16) {
         resultado += "Baixo peso muito grave";
+        resultado.style.color = 'red'
     } else if (imc >= 16 && imc < 16.99) {
         resultado += "Baixo peso grave";
     } else if (imc >= 17 && imc < 18.49) {
@@ -35,6 +36,12 @@ function calcularIMC() {
 
 /*`${nome.value} possui índice \n de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como:  ${resultado}.`*/    
    
+function enviarFormulario() {
+    // Limpar os campos de input
+    var inputs = document.querySelectorAll('.itens input');
+    inputs.forEach(input => input.value = '');
+}
+
 
 
 
