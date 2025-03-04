@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes animacao {
+    0% {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        
+    }
+}
+
+.objeto{
+    height: 230px;
+    width: 230px;
+    background: url(terra.png) no-repeat;
+    background-size: cover;
+    animation: animacao 3s linear infinite;
+    transform-origin: center;
+}
+
+  
+
+  

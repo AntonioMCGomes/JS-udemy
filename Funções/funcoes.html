@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <label for="largua">Largura</label><input type="number" name="largura" id="ilargura">
+    <label for="comprimento">Comprimento</label><input type="number" name="comprimento" id="icomprimento">
+
+    <input type="submit" value="Calcule" onclick="calcularAreaTerreno()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        /* Tipos de funções
+
+            * Void: realizam o processamento sem forncer qualquer retorno a quem fez a chamada.
+
+            * Retorno: retornam um parâmetro a quem fez a chamada.
+        
+        
+        */
+
+        function calcularAreaTerreno(){
+            let largura = Number(document.getElementById('ilargura').value)
+            let comprimento = Number(document.getElementById('icomprimento').value)
+            var resultado = document.getElementById('res')
+            
+            let area = largura * comprimento
+
+          
+            resultado.innerHTML = `O terreno possui a área de ${area}m²`
+        }
+        
+        
+    </script>
+</body>
+</html>
