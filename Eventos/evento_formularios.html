@@ -6,6 +6,42 @@
     <title>Eventos de Formulário</title>
 </head>
 <body>
-    
+    <!--
+        onfocus = elemento está em foco
+        onblur = elemento perde o foco
+        onchange = elemento é modificado
+    -->
+
+    <input type="text" name="texto" id="itexto">
+
+    <select name="teste" id="iteste">
+        <option>--Selecione--</option>
+        <option value="1">1º opção</option>
+        <option value="2">2º opção</option>
+        <option value="3">3º opção</option>
+    </select>
+
+
+
+    <script>
+
+        let texto = document.getElementById('itexto')
+
+        /*texto.addEventListener('focus', () => {
+            alert('Elemento focado')
+        })
+        */
+        texto.addEventListener('blur', () => {
+            alert('Elemento perde o foco')
+        })
+
+        let teste = document.getElementById('iteste')
+
+        teste.addEventListener('change', () => {
+            alert('Elemento modificado')
+        })
+
+
+    </script>
 </body>
 </html>
