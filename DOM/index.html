@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+
+        #objeto{
+            height: 400px;
+            width: 400px;
+            background-color: #333;
+        }
+
+        #itexto{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            text-align: center;
+        }
+        #icaracter{
+            position: absolute;
+            top: 50%;
+            left:35%;
+            width: 100px;
+        }
+        #inumero{
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            width: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="objeto">
+
+            <input type="text" name="texto" id="itexto" placeholder="Digite um caracter aqui" class="campo_texto" onkeyup="distribuiCaracter()">
+
+            <label for="caracter"></label>
+            <input type="text" name="caracter" id="icaracter" disabled="disabled">
+
+            <label for="numero"></label>
+            <input type="text" name="numero" id="inumero" disabled="disabled">
+            
+        </div>
+    </div>
+    
+    <script>
+        function distribuiCaracter() {
+            //Selecionar o valor digitado
+            let texto = document.getElementById('itexto').value
+            //limpar o campo de digitação
+            document.getElementById('itexto').value = ''
+            //Limpar os espaços em branco nas extremidades da string
+            texto.trim()
+
+            switch(texto){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    //adicionar o caracter ao campo referente a números
+                    document.getElementById('icaracter').value += texto
+                    break
+                default:
+                    //adicionar o caracter ao campo referente a letras
+                    document.getElementById('inumero').value += texto
+                    
+            }
+
+
+        }
+        
+
+
+
+    </script>
+
+</body>
+</html>
