@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        div{
+            background: #ccc;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div onclick="acao()" id="objeto">
+        
+        </div>
+    </section>
+
+
+    <script>
+        function acao(){
+            document.body.style.backgroundColor = 'blue'
+        }
+
+        let objeto = document.getElementById('objeto')
+
+        objeto.addEventListener('mouseout', () => {
+            document.body.style.backgroundColor = ''
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Teclado</title>
+    <style>
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        div{
+            background: #ccc;
+            height: 400px;
+            width: 400px;
+        }
+
+        input{
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div>
+            <input type="text" id="objeto">
+        </div>
+    </section>
+
+
+    <script>
+        let objeto = document.getElementById('objeto')
+
+        objeto.addEventListener('keypress', () => {
+            document.body.style.backgroundColor = 'yellow'
+        })
+    </script>
+</body>
+</html>

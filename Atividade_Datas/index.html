@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar e Subtrair</title>
+
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        input{
+            text-align: center;
+            background-color: burlywood;
+            text-transform: uppercase;
+        }
+
+        .conteudo{
+            height: 400px;
+            width: 400px;
+            flex-wrap: nowrap;
+            background-color: darkcyan;
+            align-content: center;
+            padding: 10px;
+            text-align: center;
+            color: #fff;   
+        }
+
+        #input1{
+            position: fixed;
+            top: 42%;
+            left: 30%;
+            
+        }
+        #input2{
+            position: fixed;
+            top: 48%;
+            left: 30%;    
+        }
+
+        #ioperador{
+            width: 200px;
+            
+        }
+
+        #input3{
+            position: fixed;
+            top: 54%;
+            left: 30%;
+            text-align: center;
+        }
+        #input4{
+            position: fixed;
+            top: 58%;
+            left: 48%;
+            
+        }
+        
+        .icalcule{
+            background-color: burlywood;
+            color: #fff;
+            font-weight:bolder;
+        }
+
+        #res{
+            position:absolute;
+            top: 62%;
+            left: 43%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main class="container">
+        <section class="conteudo">
+            <div id="input1">
+                <label for="inumero">Digite o primeiro número: </label>
+                <input type="number" name="numero" id="inumero" placeholder="Exemplo: 7">
+            </div>
+            
+            <div id="input2">
+                <label for="ioperador">Informe o operador: </label>
+                <input type="text" name="operador" id="ioperador" placeholder="Digite 'somar' ou 'subtrair'">
+            </div>
+            
+            <div id="input3">
+                <label for="inumero2">Digite o segundo número: </label>
+                <input type="number" name="numero2" id="inumero2" placeholder="Exemplo: 7">
+            </div>
+        
+            <input type="submit" value="Calcule" onclick="calcule()" id="input4" class="icalcule">
+        
+            <div id="res">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

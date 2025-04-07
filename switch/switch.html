@@ -28,6 +28,37 @@
         }   
         */
        
+
+        //let data = new Date()
+        //let anoAtual = data.getFullYear()
+
+        //idade = prompt('Informe o ano de seu nascimento: ')
+        //idade1 = Number(idade)
+        //document.write(`Sua idade é ${anoAtual - idade1} anos.`) 
+        
+        //Adicionar ou remover dias/meses(set/getMonth())/anos
+        /*document.write(data.toString())
+        data.setDate(data.getDate() + 1)
+        document.write('<hr/>')
+        document.write(data.toString())
+        */
+
+        let data1 = new Date(2025, 0, 1)
+        
+        let data2 = new Date(2025, 3, 3)
+
+        let milissegundosDatas = Math.abs(data1.getTime() - data2.getTime())
+
+        let milissegundosDia = (1*24*60*60*1000)
+
+        document.write(`Um dia tem ${milissegundosDia}`)
+        document.write(`<br>`)
+        document.write(`<hr>`)
+        document.write(`Entre 1 de janeiro de 2025 e o dia de hoje tem ${Math.ceil(milissegundosDatas / milissegundosDia)} dias.`)
+
+
+
+
     </script>
 </body>
 </html>

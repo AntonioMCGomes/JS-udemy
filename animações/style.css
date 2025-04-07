@@ -1,7 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+    background: url(galaxia.jpg) no-repeat;    
+    background-size: cover;    
+    margin: auto;
 }
 
 .container{
@@ -11,7 +21,13 @@
     align-items: center;
 }
 
-
+p{
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 12%;
+    font-size: 2rem;
+}
 
 @keyframes animacao {
     0% {
@@ -29,7 +45,7 @@
     width: 230px;
     background: url(terra.png) no-repeat;
     background-size: cover;
-    animation: animacao 3s linear infinite;
+    animation: animacao 5s linear infinite;
     transform-origin: center;
 }
 
