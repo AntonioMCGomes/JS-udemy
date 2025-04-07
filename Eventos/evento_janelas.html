@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos de Janela</title>
 </head>
-<body>
+<body onresize="tamanho()" id="objeto"> <!--onresize é um evento específico do body-->
     
+    <!--Também se falor de onscroll-->
+
+    <script>
+        /*
+        function tamanho(){
+            let objeto = document.getElementById('objeto')
+
+            document.body.style.backgroundColor = 'blue'
+        }
+
+        */
+
+        /*
+
+        Não funcionou quando usei a variável à qual atribuí o Id abaixo. Entretanto, após substituir por 'window', tive êxito.
+
+        let objeto = document.getElementById('objeto')
+
+        */
+
+        window.addEventListener('resize', () => {
+            document.body.style.backgroundColor = 'blue'
+        })
+
+        
+    </script>
     
 </body>
 </html>
