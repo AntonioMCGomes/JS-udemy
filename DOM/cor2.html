@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+
+    <style>
+        #container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #objeto{
+            height: 400px;
+            display: flex;
+            width: 400px;
+            background-color: #333;
+            justify-content: center;
+            align-items:center;
+            gap: 10px;
+        }
+
+        button{
+            color: #fff;
+        }
+
+        #verde{
+            background-color: rgba(0, 128, 0, 0.633);
+        }
+
+        #amarelo{
+            background-color: rgba(255, 255, 0, 0.633);
+        }
+
+        #azul{
+            background-color: rgba(0, 0, 255, 0.458);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="objeto">
+            <button id="verde" onclick="mudarCor('green')">Verde</button>
+            <button id="azul" onclick="mudarCor('blue')">Azul</button>
+            <button id="amarelo" onclick="mudarCor('yellow')">Amarelo</button>
+        </div>
+    </div>
+
+    <script>
+
+        let objeto = document.getElementById('objeto') //Captura área da div especificada
+        
+        //Muda a cor conforme o botão pressionado.
+        function mudarCor(cor){
+            objeto.style.backgroundColor = cor
+            objeto.addEventListener('dblclick', () =>{
+                objeto.style.backgroundColor = ''
+            })
+        }
+    </script>
+
+</body>
+</html>

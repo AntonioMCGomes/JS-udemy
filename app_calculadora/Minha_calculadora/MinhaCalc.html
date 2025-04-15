@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador</title>
+
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <main class="container">
+        <section class="objeto">
+            <input type="txt" name="saida" id="isaida" placeholder="0">
+
+            <div class="botoes">
+                <input type="reset" value="C" class="btn" onclick="calcular('acao', 'c')">
+
+                <input type="submit" name="/" class="btn" value="/"  id="divisao" onclick="calcular('acao', '/')">
+
+                <input type="submit" name="x" class="btn" value="x"  id="multiplicacao" onclick="calcular('acao', '*')">
+
+                <input type="submit" name="7" class="btn" value="7" onclick="calcular('valor', 7)">
+                <input type="submit" name="8" class="btn" value="8" onclick="calcular('valor', 8)">
+                <input type="submit" name="9" class="btn" value="9" onclick="calcular('valor', 9)">
+
+                <input type="submit" name="-" class="btn" value="-"  id="subtracao" onclick="calcular('acao', '-')">
+
+                <input type="submit" name="4" class="btn" value="4" onclick="calcular('valor', 4)">
+                <input type="submit" name="5" class="btn" value="5" onclick="calcular('valor', 5)">
+                <input type="submit" name="6" class="btn" value="6" onclick="calcular('valor', 6)">
+
+                <input type="submit" name="+" class="btn" value="+"  id="adicao" onclick="calcular('acao', '+')">
+
+                <input type="submit" name="1" class="btn" value="1" onclick="calcular('valor', 1)">
+                <input type="submit" name="2" class="btn" value="2" onclick="calcular('valor', 2)">
+                <input type="submit" name="3" class="btn" value="3" onclick="calcular('valor', 3)">
+
+                <input type="submit" value="=" class="btn" name="="onclick="calcular('acao', '=')">
+                
+                <input type="submit" name="0" class="btn" value="0" id="ponto"onclick="calcular('valor', 0)">
+
+                <input type="submit" name="." class="btn" value="." id="igual"onclick="calcular('acao', '.')">
+                
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

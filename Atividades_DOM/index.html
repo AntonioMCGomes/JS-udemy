@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Cores</title>
+    <style>
+        #container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #objeto{
+            height: 400px;
+            display: flex;
+            width: 400px;
+            background-color: #333;
+            justify-content: center;
+            align-items:center;
+            gap: 10px;
+        }
+
+    
+      
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="objeto">
+            <input type="text" name="texto" id="itexto" onfocus="acionar()" onblur="validar()">
+        </div>
+    </div>
+        
+
+    <script>
+        
+
+        function acionar(){
+            document.getElementById('itexto').style.backgroundColor = 'yellow'
+        }
+
+        function validar(){
+            let texto = document.getElementById('itexto').value
+
+            if (texto.length < 3){
+                document.getElementById('itexto').style.backgroundColor = 'red'
+            } else{
+                document.getElementById('itexto').style.backgroundColor = 'green'
+            }
+        }
+
+    </script>
+</body>
+</html>
