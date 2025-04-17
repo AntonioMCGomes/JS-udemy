@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    
+
+    <script>
+         /*
+            É possível atribuir índices mistos a arrays (Numéricos e textuais). Por exemplo:
+
+            let lista_frutas = Array()
+
+            lista_frutas[1] = 'Banana' //string
+            lista_frutas[2] = true //booleano
+            lista_frutas['x'] = 'Morango' //string
+            lista_frutas[4] = 100 //númerico
+            lista_frutas[5] = 'Queijo' //string
+            
+         */
+
+         /*
+            É possível declarar um array com atribuindo dois colchetes []
+
+            let let lista_frutas = ['Banana', 'Maçã', 'Queijo']
+
+            Entretanto, o índice atribuído automaticamente será numérico, a partir de 0.
+         
+         */
+
+         /*
+            * LENGTH EM ARRAYS
+
+            A indexação do elementos do arrays determinará a organização do objeto array; e, portanto, a a informação que a proprieadade passará ao ser solicitada.
+         
+         
+         */
+
+         /*
+            ARRAYS MULTIDIMENSIONAIS
+
+            São arrays dentro de outros arrays/Arrays que apontam para outros arrays.
+
+            var lista_coisas =  Array()
+
+            var lista_coisas['Frutas'] = array('Banana', 'Maçã', 'Morango', 'Uva')
+            var lista_coisas['Pessoas'] =[]
+
+            var lista_coisas['Pessoas']['a'] = 'Rose' 
+            var lista_coisas['Pessoas']['b'] = 'Capitu'
+            var lista_coisas['Pessoas']['c'] = 'Bentinho'
+
+         */
+
+
+         /*
+            INCLUIR E REMOVER ELEMENTOS DE UM ARRAY
+
+            let lista_de_frutas = Array()
+
+            lista_de_frutas[0] = 'Banana' 
+            lista_de_frutas[1] = 'Maçã'
+
+            //para incluir ao final: lista_de_frutas.push('Melancia')
+            
+            //para incluir ao início: lista_de_frutas.unshift('Manga')
+
+            //para excluir do final: lista_de_frutas.pop()
+
+            //para excluir do começo: lista_de_frutas.shift()
+
+            Em Arrays Multidimensionais
+
+            para incluir ao final: lista_de_coisas[nomeArray].push('elemento')
+            
+            //para incluir ao início: lista_de_coisas[nomeArray].unshift('elemento')
+
+            //para excluir do final: lista_de_coisas[nomeArray].pop()
+
+            //para excluir do começo: lista_de_coisas[nomeArray].shift()
+         
+         */
+
+         /*
+            MÉTODOS DE PESQUISA
+
+            let lista_frutas = Array()
+
+            lista_frutas[] = 'Banana'
+            lista_frutas[] = 'Maçã'
+            lista_frutas[] = 'Morango'
+            lista_frutas[] = 'Uva'
+
+            lista_frutas.indexOf('Morango')
+
+            Obs.: -1 indica a não existência do elemento no array pesquisado.
+         
+         */
+
+
+         /*
+            *ORDENAÇÃO DE ELEMENTOS EM ARRAYS
+
+            let lista_frutas = Array()
+
+            lista_frutas[0] = 'Maçã'
+            lista_frutas[1] = 'Uva'
+            lista_frutas[2] = 'Banana'
+            lista_frutas[3] = 'Morango'
+
+            lista_frutas.sort() 
+            
+            //É um método alfanumérico, em que a contagem de caracteres do elemento determina o índice que ocupará no array.
+
+            //ENTRETANTO, para ordenar arrays de elementos numéricos é ineficaz, pois vai avaliar os números a partir do primeiro e respectivos, em vez de avaliar o valor númerico do conjunto.
+
+            //PARA RESOLVER, é necessário usar uma função.
+
+            let lista_numeros = Array()
+
+            lista_numeros[0] = 12
+            lista_numeros[1] = 40
+            lista_numeros[2] = 3
+            lista_numeros[3] = 7
+            lista_numeros[4] = 19
+            lista_numeros[5] = 1
+            lista_numeros[3] = 6
+
+            lista_numeros(ordenarNumeros) //Os parênteses foram ignorados para evitar que o Java Script  execute a função antes de aparecer na leitura do código.
+
+            function ordenarNumeros(a, b){
+               return a - b
+
+               //< 0 = a ordenado antes de b
+               //> 0 = b ordenado antes de a
+               //== 0 = a ordem se mantém
+            } 
+               
+            Obs.: Se no array de números houver valores de string, a função sort retornará undefined. Porém, se nas string houver números, a função fará o cálculo e retornará a ordem correta.
+
+         */
+    </script>
+</body>
+</html>
