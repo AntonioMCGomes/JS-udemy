@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        /*function pesquisa_binaria(lista, item){
+            let baixo = 0
+            let alto = lista.length -1 //corrigir
+
+            while(baixo <= alto){
+                let meio = Math.floor((baixo + alto) / 2)
+                
+                if(lista[meio] === item){
+                    return meio
+                } 
+                if(lista[meio] < item){
+                    baixo = meio + 1
+                } else{
+                    alto = meio - 1
+                }
+            }
+
+            return -1
+        }
+
+        let minhha_lista = [1, 4, 6, 56, 2, 5, 9]
+
+        console.log(pesquisa_binaria(minhha_lista, 5))
+        console.log(pesquisa_binaria(minhha_lista, -1))*/
+
+    function buscaBinaria(array, valor) {
+        let inicio = 0;
+        let fim = array.length - 1;
+
+        while (inicio <= fim) {
+            let meio = Math.floor((inicio + fim) / 2);
+
+            if (array[meio] === valor) {
+                return meio; // Retorna o índice onde o valor foi encontrado
+            }
+
+            if (array[meio] < valor) {
+                inicio = meio + 1;
+            } else {
+                fim = meio - 1;
+            }
+    
+        }
+        return -1; // Retorna -1 se o valor não for encontrado
+    }
+
+    
+
+
+    // Exemplo de uso:
+    const array = [1, 3, 5, 7, 9, 11, 9, 56, 33, 12];
+    const valor = 12;
+    const resultado = buscaBinaria(array, valor);
+
+    console.log(resultado); // Saída: 3 (índice do valor 7 no array)
+    </script>
+</body>
+</html>
