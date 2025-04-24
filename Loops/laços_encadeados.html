@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços Encadeados</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        /*
+        let x = prompt('Informe um número: ') -1
+        let y = 0
+        while (x <= 10){
+            x++
+            while (y <= 10) {
+                document.write(`${y} x ${x} = ${y * x} <br/>`)
+                y++
+            }
+        } 
+        */
+    
+        for (let y = 1; y <= 10; y++){
+
+            for (let x = 1; x <= 10; x++){
+                document.write(y + ' x ' + x + ' = ' + (y * x) + '<br/>')
+            }
+            document.write('<hr/>')
+        }
+
+    </script>
+</body>
+</html>
